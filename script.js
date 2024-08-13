@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const div = document.getElementById('contents');
 
     function updateContent() {
-        fetch("https://github.com/linwinashwinLin/ashwin-learn/blob/main/meta.json")
+        fetch("https://raw.githubusercontent.com/linwinashwinLin/ashwin-learn/main/meta.json")
             .then(resp => resp.json())
             .then(data => {
                 let innerContents = '';
