@@ -11,6 +11,12 @@
             "title": "My JS Validation",
             "pagelink": "https://linwinashwinlin.github.io/ashwin-learn-JS/",
             "repolink": "https://github.com"
+        },
+         {
+            "img": "https://picsum.photos/200/300",
+            "title": "My JS CRUD Operations",
+            "pagelink": "https://linwinashwinlin.github.io/ashwin-CURD-JS/",
+            "repolink": "https://github.com"
         }
     ]
 }
