@@ -4,19 +4,19 @@
             "img": "https://w7.pngwing.com/pngs/290/579/png-transparent-html-html-logo-html-5-html-five-logo-html-5-logo-programming-langugae-3d-icon-thumbnail.png",
             "title": "My HTML & CSS Page",
             "pagelink": "https://linwinashwinlin.github.io/React-Learning/",
-            "repolink": "https://github.com"
+            "repolink": "https://github.com/linwinashwinLin"
         },
         {
             "img": "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_640.png",
             "title": "My JS Validation",
             "pagelink": "https://linwinashwinlin.github.io/ashwin-learn-JS/",
-            "repolink": "https://github.com"
+            "repolink": "https://github.com/linwinashwinLin"
         },
          {
-            "img": "https://picsum.photos/200/300",
+            "img": "https://picsum.photos/200/200",
             "title": "My JS CRUD Operations",
             "pagelink": "https://linwinashwinlin.github.io/ashwin-CURD-JS/",
-            "repolink": "https://github.com"
+            "repolink": "https://github.com/linwinashwinLin"
         }
     ]
 }
