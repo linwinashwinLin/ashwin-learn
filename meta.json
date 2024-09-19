@@ -17,6 +17,12 @@
             "title": "My JS CRUD Operations",
             "pagelink": "https://linwinashwinlin.github.io/ashwin-CURD-JS/",
             "repolink": "https://github.com/linwinashwinLin/ashwin-CURD-JS"
+        },
+         {
+            "img": "https://picsum.photos/200/200",
+            "title": "Async Using - Fetch Promise",
+            "pagelink": "https://linwinashwinlin.github.io/Asynch-Animal-Project/",
+            "repolink": "https://github.com/linwinashwinLin/Asynch-Animal-Project"
         }
     ]
 }
