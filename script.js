@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(resp => resp.json())
             .then(data => {
                 let innerContents = '';
+                console.log(rec);
                 data.learning_records.forEach(rec => {
                     let buttons = '';
                     if (rec.pagelink || rec.repolink) {
