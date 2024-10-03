@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const div = document.getElementById('contents');
     function updateContent() {
-        fetch("https://raw.githubusercontent.com/poojar222/My-learning/main/meta.json")
+        fetch("https://raw.githubusercontent.com/linwinashwinLin/ashwin-learn/refs/heads/main/meta.json")
             .then(resp => resp.json())
             .then(data => {
                 let innerContents = '';
