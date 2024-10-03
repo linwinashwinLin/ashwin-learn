@@ -1,18 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
     const div = document.getElementById('contents');
-
     function updateContent() {
-        fetch("https://raw.githubusercontent.com/linwinashwinLin/ashwin-learn/main/meta.json")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
+        fetch("https://raw.githubusercontent.com/poojar222/My-learning/main/meta.json")
+            .then(resp => resp.json())
             .then(data => {
                 let innerContents = '';
-
                 data.learning_records.forEach(rec => {
+                    let buttons = '';
+                    if (rec.pagelink || rec.repolink) {
+                        if (rec.pagelink) {
+                            buttons += `<button onclick="window.open('${rec.pagelink}', '_blank');">UI PAGE</button>`;
+                        }
+                        if (rec.repolink) {
+                            buttons += `<button onclick="window.open('${rec.repolink}', '_blank');">SOURCE CODE</button>`;
+                        }
+                    } else if (rec.quizlink) {
+                        buttons += `<button onclick="window.open('${rec.quizlink}', '_blank');">QUIZ</button>`;
+                    }
                     innerContents += `
                         <div class="project">
                             <div class="first-data">
@@ -20,19 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <div class="inner-data">
                                     <span>${rec.title}</span>
                                     <div class="buttons">
-                                        <button onclick="window.open('${rec.pagelink}', '_blank');">UI PAGE</button>
-                                        <button onclick="window.open('${rec.repolink}', '_blank');">SOURCE CODE</button>
+                                        ${buttons}
                                     </div>
                                 </div>
                             </div>
                         </div>`;
                 });
                 div.innerHTML = innerContents;
-            })
-            .catch(error => {
-                console.error('Error fetching or processing data:', error);
             });
-    };
-    
+    }
     updateContent();
 });
